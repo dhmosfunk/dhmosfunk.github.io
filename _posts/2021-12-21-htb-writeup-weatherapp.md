@@ -38,6 +38,6 @@ requests.post("http://157.245.43.98:30094/api/weather", json={'endpoint': smug, 
 
 
 Ref:
-https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/#http-request-splitting-cve-2018-12116
-https://hackerone.com/reports/409943
-https://stackoverflow.com/questions/15433188/what-is-the-difference-between-r-n-r-and-n
+https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/#http-request-splitting-cve-2018-12116 <br> 
+https://hackerone.com/reports/409943 <br>
+https://stackoverflow.com/questions/15433188/what-is-the-difference-between-r-n-r-and-n <br>
