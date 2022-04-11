@@ -19,7 +19,7 @@ tags:
 
 | Place | Points | Team |
 | --- | --- | --- |
-| [30](https://ctftime.org/event/1594/) | 912.000 | Solo |
+| [30](https://ctftime.org/event/1594/) | 912.000 | Solo-trelosgamiolis |
 
 
 # log4u
