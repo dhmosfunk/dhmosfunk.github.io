@@ -22,7 +22,9 @@ tags:
 | [30](https://ctftime.org/event/1594/) | 912.000 | Solo |
 
 
-Knock knock? Who's there? Another pastebin!!
+# log4u
+### Challenge Description
+```A teacher once told me to "never log things you can't trust...", but it's such a nice business opportunity, so I couldn't resist.```
 
 
 ![b1a57c3f-71e1-4bbf-b299-717490b428fd](https://user-images.githubusercontent.com/45040001/162817938-341792b4-52b0-4d0b-8a90-cc8598d2b0d6.png)
