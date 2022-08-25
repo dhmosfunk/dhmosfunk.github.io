@@ -1,21 +1,16 @@
 ---
 layout: single
-title: WMCTF2022 - nanoScore
-excerpt: "dsa dsa dsa dsa ds a"
+title: nanoScore - WMCTF2022 [Web]
+excerpt: "nanoScore web challenge writeup"
 date: 2022-8-25
 classes: wide
 header:
   teaser: /
-  teaser_home_page: true
-  icon: /assets/images/hackthebox.webp
+  teaser_home_page: false
+  icon: /
 categories:
-  - HackTheBox
-  - boot2root
-tags:  
-  - JWT Token
-  - RCE
-  - Git
-  - SUID
-  - Memory
-  - Segment Violation
+  - WMCTF 2022
+  - CTF Jeo
+tags: 
+
 ---
