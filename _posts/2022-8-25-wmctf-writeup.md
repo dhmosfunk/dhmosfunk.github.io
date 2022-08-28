@@ -20,7 +20,7 @@ tags:
 ![challenge dsc](https://user-images.githubusercontent.com/45040001/186703630-fed38c87-d18b-4c61-8a9e-b92abae72653.png)<br>
 
 ### Challenge Hint
-"First Blood is the sponsor, but it is very helpful to solve the problem Therefore, the reward of this challenge belongs to second blood"
+"First Blood is the sponsor, but it is very helpful to solve the problem Therefore, the reward of this challenge belongs to second blood" <br>
 ![challenge hint](https://user-images.githubusercontent.com/45040001/186704114-7f942670-8560-4991-a986-1721358bdd3f.png)<br>
 
 
