@@ -9,12 +9,9 @@ header:
   teaser_home_page: false
   icon: /
 categories:
-  - WMCTF 2022
-  - CTF Jeo
-tags: 
   - CTF
-  - Weak Password
-  - Bruteforce 
+tags: 
+  - WMCTF 2022
 ---
 
 ### Challenge Description
