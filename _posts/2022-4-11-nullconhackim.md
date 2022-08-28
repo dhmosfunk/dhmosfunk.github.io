@@ -9,10 +9,9 @@ header:
   teaser_home_page: false
   icon:
 categories:
-  - nullcon HackIM 2022
-  - CTF Jeo
-tags:  
   - CTF
+tags:  
+  - nullcon HackIM 2022
 ---
 
 
