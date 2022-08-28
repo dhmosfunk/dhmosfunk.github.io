@@ -9,9 +9,10 @@ header:
   teaser_home_page: false
   icon:
 categories:
-  - CTF
+  - ctf
 tags:  
   - nullcon HackIM 2022
+  - web
 ---
 
 
