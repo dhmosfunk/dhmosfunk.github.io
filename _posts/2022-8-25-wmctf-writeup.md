@@ -9,9 +9,10 @@ header:
   teaser_home_page: false
   icon: /
 categories:
-  - CTF
+  - ctf
 tags: 
   - WMCTF 2022
+  - web
 ---
 
 ### Challenge Description
