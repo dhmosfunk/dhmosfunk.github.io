@@ -12,16 +12,14 @@ categories:
   - hackthebox
   - boot2root
 tags:  
-  - SNMP Enumeration
+  - snmp enumeration
   - CVE-2021-32099
-  - SQL Map
-  - SSH Port Forward
-  - Upload Files
-  - SSH-Keygen
-  - Linux-SSH-Key-Perms
-  - SUID
-  - Path-Hijacking
-  - Tar-Hijacking
+  - sql map
+  - ssh port forward
+  - file upload
+  - ssh keygen
+  - suid
+  - path hijacking
 ---
 
 <h1 align="center">
