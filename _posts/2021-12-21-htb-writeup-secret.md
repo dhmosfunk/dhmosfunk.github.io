@@ -12,12 +12,12 @@ categories:
   - hackthebox
   - boot2root
 tags:  
-  - JWT Token
-  - RCE
-  - Git
-  - SUID
-  - Memory
-  - Segment Violation
+  - jwt tokens
+  - remote command execution
+  - git
+  - suid
+  - segment violation
+  - memory dump
 ---
 
 <h1 align="center">
