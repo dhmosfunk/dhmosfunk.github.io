@@ -49,7 +49,7 @@ When you see a javascript file like the `viewletter.js` immediately you think ho
 
 ![viewletter_javascript](https://user-images.githubusercontent.com/45040001/187235528-15b5cbc5-faea-4430-bef9-f7891538de51.png)
 
-### Perform XSS attack 
+## Get prepared for the attack
 For exploitation part first of all we need a HTTP server(free solution ngrok) and create a directory tree like that:
 ![folder_tree](https://user-images.githubusercontent.com/45040001/187313837-93762db5-ebfc-4c99-9f69-132ce594b72c.png)
 <br>
@@ -93,10 +93,35 @@ await visit(`http://127.0.0.1/letters?id=${inserted.lastID}`, authSecret);
 botVisiting = false;
 ```
 
+## Attack
+
+So we retreive a lot of informations and they are:
+- we find unkeyed inputs for web cache poisoning attack
+- we have to poison the last inserted id(last submited letter)
+- we have to steal the `authtoken`
+- and grab the flag
+
+First step is to setup our HTTP server with all files & directories included
+![ngrok_hosting](https://user-images.githubusercontent.com/45040001/187318454-c153a9c9-9530-43d9-8f93-26bab32d86cd.png)
+
+![web_poisoning](https://user-images.githubusercontent.com/45040001/187318535-9fc0269b-fac7-46a6-bbf9-3f048cedcd05.png)
+
+![submit_new_letter](https://user-images.githubusercontent.com/45040001/187318584-250a390e-745c-4d8f-b3e1-7f5560ca3c8c.png)
+
+
+![auth_cookie](https://user-images.githubusercontent.com/45040001/187318627-f3192d7b-3d86-4010-8e6e-0c298ca62a65.png)
 
 
 
+![get_flag_1](https://user-images.githubusercontent.com/45040001/187318708-ded902f8-0e25-4926-897e-8b185b125da4.png)
+
+[ip bypass headers](https://gist.githubusercontent.com/kaimi-/6b3c99538dce9e3d29ad647b325007c1/raw/339dad3040fd1a967588edf341eb72b033a9d9fe/gistfile1.txt) <br>
+
+![get_flag_2](https://user-images.githubusercontent.com/45040001/187318715-5c3adc65-87fd-4c8f-ba4f-b9ee3676de8b.png)
+
+![correct_payload](https://user-images.githubusercontent.com/45040001/187318812-fb0b7c39-bb01-4797-8f2d-690a260b33d3.png)
+
+![final_flag](https://user-images.githubusercontent.com/45040001/187318733-85d968a5-fe2a-43b5-b121-949d8528c19f.png)
 
 
 
-[ip bypass headers](https://gist.githubusercontent.com/kaimi-/6b3c99538dce9e3d29ad647b325007c1/raw/339dad3040fd1a967588edf341eb72b033a9d9fe/gistfile1.txt)
