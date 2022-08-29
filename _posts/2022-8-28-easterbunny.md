@@ -25,6 +25,20 @@ It's that time of the year again! Write a letter to the Easter bunny and make yo
 <img src="https://user-images.githubusercontent.com/45040001/187103435-e7a41ec1-67d8-491a-9572-a340b96f265e.png">
 </h4>
 
+
+The EasterBunny is a easy challenge from hackthebox where you can learn a lot from it. Lets explain little bit the steps but with words, the first step is to identify web cache poisoning vulnerability and follow [web cache poisoning](https://portswigger.net/research/practical-web-cache-poisoning) methodology.
+
+## WCP Methodology
+![image](https://user-images.githubusercontent.com/45040001/187235119-7f8f04e9-1a0e-4899-b623-109aae0d0ceb.png)
+
+### Detect unkeyed input
+We can detect & inject into cache a random string just using `X-Forwarded-Host` HTTP Header. Using this header we can perform a xss attack to steal some cookies from the user in our situation from `bot.js`.<br>
+![detect_unkeyd_input](https://user-images.githubusercontent.com/45040001/187235463-af6684d1-b75f-422d-b08f-7515db78026a.png)
+
+![unkeyd_input](https://user-images.githubusercontent.com/45040001/187235510-121c99c8-0160-463d-b4e2-c95af06b362a.png)
+
+![viewletter_javascript](https://user-images.githubusercontent.com/45040001/187235528-15b5cbc5-faea-4430-bef9-f7891538de51.png)
+
 ## Code Review
 
 ### route /submit
