@@ -10,9 +10,10 @@ header:
   icon: /
 categories:
   - ctf
+  - web
 tags: 
   - WMCTF 2022
-  - web
+  - bruteforce
 ---
 
 ### Challenge Description
