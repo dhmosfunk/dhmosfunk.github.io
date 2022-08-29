@@ -10,9 +10,12 @@ header:
   icon:
 categories:
   - ctf
+  - web
 tags:  
   - nullcon HackIM 2022
-  - web
+  - CVE-2021-44228
+  - latex hacking
+  - directory traversal
 ---
 
 
