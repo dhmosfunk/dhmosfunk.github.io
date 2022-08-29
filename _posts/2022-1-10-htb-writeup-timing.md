@@ -12,11 +12,11 @@ categories:
   - hackthebox
   - boot2root
 tags:  
-  - Local File Inclusion(LFI)
-  - Custom Exploitation
-  - Enumeration Parameters
-  - SSH-Keygen
-  - Syblolic Links
+  - local file inclusion
+  - custom exploitation
+  - enumeration parameters
+  - ssh keygen
+  - syblolic links
 ---
 
 <h1 align="center">
