@@ -19,14 +19,11 @@ tags:
 ---
 
 
+It's that time of the year again! Write a letter to the Easter bunny and make your wish come true! But be careful what you wish for because the Easter bunny's helpers are watching! <br>
 
 <h4 align="center">
 <img src="https://user-images.githubusercontent.com/45040001/187103435-e7a41ec1-67d8-491a-9572-a340b96f265e.png">
 </h4>
-It's that time of the year again! Write a letter to the Easter bunny and make your wish come true! But be careful what you wish for because the Easter bunny's helpers are watching!
-
-
-
 
 ## Code Review
 
