@@ -15,6 +15,7 @@ tags:
   - web cache poisoning
   - cross site scripting
   - ip bypass
+  - resource hijacking
 ---
 
 
