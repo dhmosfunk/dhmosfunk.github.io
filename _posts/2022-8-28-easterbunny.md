@@ -51,7 +51,7 @@ When you see a javascript file like the `viewletter.js` immediately you think ho
 
 ## Get prepared for the attack
 For exploitation part first of all we need a HTTP server(free solution ngrok) and create a directory tree like that:
-![folder_tree](https://user-images.githubusercontent.com/45040001/187313837-93762db5-ebfc-4c99-9f69-132ce594b72c.png)
+![187313837-93762db5-ebfc-4c99-9f69-132ce594b72c](https://user-images.githubusercontent.com/45040001/188494846-ad18b497-7d7c-4180-b1be-06d2092d45ea.png)
 <br>
 And the most important our malicious `viewletter.js` hosted in our http server where with this script we can steal the auth token and get the flag.
 ```javascript
@@ -102,7 +102,7 @@ So we retreive a lot of informations and they are:
 - and grab the flag
 
 First step is to setup our HTTP server with all files & directories included
-![ngrok_hosting](https://user-images.githubusercontent.com/45040001/187318454-c153a9c9-9530-43d9-8f93-26bab32d86cd.png)
+![tt](https://user-images.githubusercontent.com/45040001/188495101-735dd790-a852-48a2-ad49-ec277bba5999.png)
 
 <br>
 
