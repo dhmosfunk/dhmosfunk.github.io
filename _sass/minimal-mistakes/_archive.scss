@@ -20,7 +20,12 @@
 
 .archive__item {
   position: relative;
-  border-bottom: 1px solid white;
+  border: 1px solid white;    
+  margin-bottom: 10px;
+  padding-left: 10px;
+  background-color: #1b1f26;
+}
+   
 }
 
 .archive__subtitle {
@@ -48,6 +53,7 @@
 }
 .archive__item-title::before{
    content: "# - ";
+
 }
 /* remove border*/
 .page__content {
