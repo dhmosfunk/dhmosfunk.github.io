@@ -46,7 +46,9 @@
     opacity: 0.5;
   }
 }
-
+.archive__item-title::before{
+   content: "# - ";
+}
 /* remove border*/
 .page__content {
   .archive__item-title {
