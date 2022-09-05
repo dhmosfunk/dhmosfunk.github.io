@@ -20,11 +20,6 @@ tags:
 
 
 
-| CTFTime Place | Points | Team |
-| --- | --- | --- |
-| [30](https://ctftime.org/event/1594/) | 912.000 | Solo - trelosgamiolis |
-
-
 # 0x1 log4u
 ### Challenge Description
 ```A teacher once told me to "never log things you can't trust...", but it's such a nice business opportunity, so I couldn't resist.```
