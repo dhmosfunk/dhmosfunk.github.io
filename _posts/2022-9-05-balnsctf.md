@@ -13,7 +13,10 @@ categories:
   - web
 tags:  
   - balsnctf
+  - remote command execution
+  - race condition
 ---
 
 
-comming soon...
+## Challenge Description
+"Want to know whether the challenge is down or it's just your network down? Want to know who to send a message when you want to contact an admin of some challenges? Take a look at our "fastest" Health Check API in the world!"
