@@ -23,7 +23,7 @@ tags:
 
 
 ## Information
-Some information about healthcheck1 and healthcheck2..
+Some information about healthcheck1 and healthcheck2, these are 2 seperate challenges where you have to gain access with RCE for healthcheck 1 enumerate the file system and grab the flag. After that healthcheck 2 comes to the surface, so we got a shell and with that into web application 
 
 
 ## Health Check 1
@@ -32,7 +32,11 @@ Some information about healthcheck1 and healthcheck2..
 ![docs_dir](https://user-images.githubusercontent.com/45040001/188512230-691bfdc5-8811-4e0b-a180-b15a56e97f28.png)
 
 ![docs](https://user-images.githubusercontent.com/45040001/188512252-23eea18f-11a7-4008-b7b0-b85ed03742c8.png)
+<br>
+"<b>This endpoint is only for admin. do NOT share this link with players</b>!
 
+Upload the health check script to create a new problem. The uploaded file should be a zip file. The zip file should NOT have a top-level folder, you must place an executable (or a script) named run. You may put other fiels as you want. Below is an example output of zipinfo myzip.zip of a valid myzip.zip"
+<br>
 ![admin_only](https://user-images.githubusercontent.com/45040001/188512336-edf35a77-5b7d-4bc4-bdd8-956d5aa938f3.png)
 
 ![upload exploit](https://user-images.githubusercontent.com/45040001/188512694-815aa9fe-edc5-4eb4-a3d1-fd1103a1ef8a.png)
