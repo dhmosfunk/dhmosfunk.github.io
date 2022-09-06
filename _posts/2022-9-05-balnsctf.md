@@ -23,7 +23,7 @@ tags:
 
 
 ## Information
-Some information about healthcheck1 and healthcheck2, these are 2 seperate challenges where you have to gain access with RCE for healthcheck 1 enumerate the file system and grab the flag. After that healthcheck 2 comes to the surface, so we got a shell and with that into web application 
+Some information about healthcheck1 and healthcheck2, these are 2 seperate challenges where you have to gain access with RCE for healthcheck 1 enumerate the file system and grab the flag. After that healthcheck 2 comes to the surface, so we got a shell and with that into web application directory(`/home/healthcheck/app`) we found 2 python files called `apiserver.py` and `background.py` with source code of the app, analyzing the source code of the `apiserver.py` at `@app.get('/{dir_name}')` route is there a opportunity for a `race contition` attack and after that grab the second flag.
 
 
 ## Health Check 1
