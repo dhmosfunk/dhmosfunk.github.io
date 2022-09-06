@@ -61,6 +61,9 @@
   }
 }
 
+h1.page_title::before {
+   content: "# - "
+}
 .page_title::before {
    content: "# - "
 }
