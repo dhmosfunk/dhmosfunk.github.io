@@ -1,6 +1,6 @@
 ---
-title: "About"
-layout: about
-permalink: /about/
+title: "contributions"
+layout: default
+permalink: /contributions/
 author_profile: true
 ---
