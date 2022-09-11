@@ -1,7 +1,7 @@
 main:
   - title: "home"
     url: /
-  - title: "contributions "
+  - title: "contributions"
     url: /contributions/
   - title: "posts"
     url: /year-archive/
