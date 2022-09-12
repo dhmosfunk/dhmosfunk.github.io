@@ -25,29 +25,34 @@
     {% endif %}
     <p class="archive__item-title" itemprop="headline">
       
-      {% if post.link %}
+     
+      {% if post.read_time %}<i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{% include read-time.html %}{% endif %}
+    
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a></p>
+      {% else %}
+
+      {% if post.read_time %}<i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{% include read-time.html %}{% endif %}
+    
+        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    
+{% if post.link %}
       <p class="page__meta">
       {% if post.last_modified_at %}
         <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.last_modified_at | date: "%Y-%m-%d" }}">{{ post.last_modified_at | date: "%B %d, %Y" }}</time>&emsp;
       {% elsif post.date %}
         <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y " }}</time>&emsp;
       {% endif %}
-      {% if post.read_time %}<i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{% include read-time.html %}{% endif %}
-    
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a></p>
-      {% else %}
-    <p class="page__meta">
+    </p>
+  
+  
+      <p class="page__meta">
       {% if post.last_modified_at %}
         <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.last_modified_at | date: "%Y-%m-%d" }}">{{ post.last_modified_at | date: "%B %d, %Y" }}</time>&emsp;
       {% elsif post.date %}
         <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y " }}</time>&emsp;
-      {% endif %}
-      {% if post.read_time %}<i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{% include read-time.html %}{% endif %}
+      {% endif %}</p>
     
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a></p>
-      {% endif %}
-    
-
     
 
   </article>
