@@ -2,8 +2,8 @@ items:
   - title: Home
     url: /
   - title: Write-ups
-    url: /writeups.html
+    url: /writeups/
   - title: Contributions
-    url: /contributions.html
+    url: /contributions/
   - title: Tools
-    url: /tools.html
+    url: /tools/
