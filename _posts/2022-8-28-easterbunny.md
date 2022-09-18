@@ -2,7 +2,6 @@
 layout: single
 title:  "EasterBunny"
 date:   2022-08-28
-categories: jekyll update
 ---
 
 
