@@ -23,7 +23,7 @@
         <h3 class="typing">GET /?/ HTTP/2</H3>
         <p>#################</p>
         {% for post in site.posts %}
-            <p>post title {{post.title}}, {{post.date}}</p>
+            <a href="{{ post.url | relative_url }}"> post title {{post.title}}, {{post.date}}</a>
         {% endfor %}
         <p class="data">
 
