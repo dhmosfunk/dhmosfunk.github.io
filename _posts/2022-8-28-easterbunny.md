@@ -35,7 +35,7 @@ When you see a javascript file like the `viewletter.js` immediately you think ho
 ![viewletter_javascript](https://user-images.githubusercontent.com/45040001/187235528-15b5cbc5-faea-4430-bef9-f7891538de51.png)
 
 ## Get prepared for the attack
-For exploitation part first of all we need a HTTP server(free solution ngrok) and create a directory tree like that:
+For exploitation part first of all we need a HTTP server(free solution ngrok) and create a directory tree like that: <br>
 ![187313837-93762db5-ebfc-4c99-9f69-132ce594b72c](https://user-images.githubusercontent.com/45040001/188494846-ad18b497-7d7c-4180-b1be-06d2092d45ea.png)
 <br>
 And the most important our malicious `viewletter.js` hosted in our http server where with this script we can steal the auth token and get the flag.
