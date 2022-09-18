@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "EasterBunny"
-date:   2022-08-28 00:00:00 +0300
+date:   2022-08-28
 categories: jekyll update
 ---
 
