@@ -1,23 +1,7 @@
 ---
 layout: single
 title: Secret [boot2root] - Hack The Box
-excerpt: "Secret is a fun and tricky machine where we have to find the secret key at that file.zip we did download. When we find the secret key we must forge the malicious jwt token to gain access to the API with admin privileges and obtain remote code execution by adding a special character at the end of URL with reverse shell payload. At the root part we found a SUID binary file with source code in C. At this point we run the binary file and we cause a segmentation fault and obtain the root flag at /var/crash."
 date: 2021-12-21
-classes: wide
-header:
-  teaser: /assets/images/htb-writeup-secret/seecret-logo.png
-  teaser_home_page: true
-  icon: /assets/images/hackthebox.webp
-categories:
-  - hackthebox
-  - boot2root
-tags:  
-  - jwt tokens
-  - remote command execution
-  - git
-  - suid
-  - segment violation
-  - memory dump
 ---
 
 <h1 align="center">

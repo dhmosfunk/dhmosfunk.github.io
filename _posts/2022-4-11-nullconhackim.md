@@ -1,21 +1,7 @@
 ---
 layout: single
 title: nullcon HackIM 2022
-excerpt: nullcon HackIM 2022 Web Writeups
 date: 2022-4-11
-classes: wide
-header:
-  teaser: 
-  teaser_home_page: false
-  icon:
-categories:
-  - ctf
-  - web
-tags:  
-  - nullcon HackIM 2022
-  - CVE-2021-44228
-  - latex hacking
-  - directory traversal
 ---
 
 

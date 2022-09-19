@@ -1,19 +1,7 @@
 ---
 layout: single
 title: nanoScore - WMCTF2022
-excerpt: "If you get the first blood, you will get some rewards from Nano. Can you?"
 date: 2022-8-25
-classes: wide
-header:
-  teaser: /
-  teaser_home_page: false
-  icon: /
-categories:
-  - ctf
-  - web
-tags: 
-  - WMCTF 2022
-  - bruteforce
 ---
 
 ### Challenge Description

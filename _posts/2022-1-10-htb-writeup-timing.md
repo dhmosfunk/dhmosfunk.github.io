@@ -1,22 +1,7 @@
 ---
 layout: single
 title: Timing [boot2root] - Hack The Box
-excerpt: "Timing is a fun machine where after network and directory enumeration we discover image.php we fuzz this php file with ffuf and find a ?img= parameter which if we pass /etc/passwd the server tells us “hacking attempt”. If we try it with php://filter with base64 encoding we will have successfully a LFI Vulnerability. Reading the /etc/passwd file the aaron user shows up which we use for login in the web server with default credentials(aaron:aaron). After gaining access to the web server we will see the edit profile menu from which you can get access to admin user. After that a new menu shows up admin panel which allows us to upload an image. After upload we must find the filename with php payload and enumerate to /opt folder which contains a backup file which contains a git repository. Enumerate the folder and we find a git logs which shows the database configuration changes(password for ssh). Login with aaron user name and the password with ssh. At the root part we have access to /usr/bin/netutils as root which allows us to download a file from another server with http and ftp. First create a symbolic link to /root/.ssh/authorized_keys and a new private & public rsa key to the attacking machine. Start a http server from the attacking machine and download it from netutils. That means when the file comes to the timing machine the authorized keys we will overwrite."
 date: 2022-1-10
-classes: wide
-header:
-  teaser: /assets/images/htb-writeup-timing/timing-logo.png
-  teaser_home_page: true
-  icon: /assets/images/hackthebox.webp
-categories:
-  - hackthebox
-  - boot2root
-tags:  
-  - local file inclusion
-  - custom exploitation
-  - enumeration parameters
-  - ssh keygen
-  - syblolic links
 ---
 
 <h1 align="center">
