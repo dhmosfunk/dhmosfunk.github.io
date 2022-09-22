@@ -60,13 +60,6 @@ body {
     }
   }
 
-.post{
-  margin: 35px 100px 0px 100px;
-  border: 1px solid white;
-  padding-bottom: 15px;
-  padding-left: 1%;
-  padding-right: 1%;
-}
 .main{
   padding-left: 1%;
 }
@@ -76,6 +69,8 @@ body {
 }
 .data a{
   color:rgb(255, 255, 255);
+  border:1px solid white;
+  padding: 5px;
 }
 
 .data a:hover{
