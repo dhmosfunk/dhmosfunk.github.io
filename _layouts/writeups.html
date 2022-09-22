@@ -10,6 +10,8 @@ layout: default
         {% for post in site.posts %}
         <div id="post_data">
             <a href="{{post.url}}"> {{post.title}}, {{post.date | date: "%B %d, %Y"}}</a>
+
+            {{post.desc}}
         </div>
         {% endfor %}
     </p>
