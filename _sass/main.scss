@@ -73,7 +73,7 @@ body {
 
 .data a:hover{
   background-color: #ddd;
-    color: black;
+  color: black;
 }
 .data a::before{
   content: "-> ";
@@ -117,3 +117,5 @@ body {
 #post_data:hover{
   background-color: rgb(49, 49, 49);
 }
+
+
