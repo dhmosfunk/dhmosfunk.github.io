@@ -25,9 +25,9 @@
 
 <hr>
 
-<div class="main">
+
     
-        {{ content }}
+       
 
         <a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="fa fa-linkedin"></a>
         <a href="mailto:{{site.email}}" target="_blank" class="fa fa-envelope"></a>
@@ -35,10 +35,19 @@
         <a href="http://github.com/{{site.github_username}}" target="_blank" class="fa fa-github"></a>
 
 
-        <div class="flicker"></div>
-        <div class="scanlines"></div>
-</div>
 
+
+<div class="tv">
+    <div id="terminal">
+
+        {{ content }}
+    </div>
+    <div class="collection external terminal">
+        Dhmosfunk | 127.1
+    </div>
+    <div class="flicker"></div>
+    <div class="scanlines"></div>
+</div>
 
 <div class="footer">
     <p>{{site.author_name}}<i class="fa fa-map-marker"> </i>127.1</p>
