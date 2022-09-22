@@ -9,7 +9,7 @@ layout: default
     <p class="data">
         {% for post in site.posts %}
         <div id="post_data">
-            <h4>{{post.title}} | post.category</h4>
+            <h4>{{post.title}} | {{post.category}} </h4>
 
             {{post.desc}} <br>
             {{post.date | date: "%B %d, %Y"}}
