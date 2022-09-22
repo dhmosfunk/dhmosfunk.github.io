@@ -1,0 +1,9 @@
+items:
+  - title: Home
+    url: /
+  - title: Write-ups
+    url: /writeups/
+  - title: Contributions
+    url: /contributions/
+  - title: Tools
+    url: /tools/

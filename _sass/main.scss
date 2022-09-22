@@ -1,0 +1,116 @@
+body {
+    background-color: black;
+    color:white;
+    font-family: 'Inconsolata', Consolas, monospace;
+}
+.typing {
+    width: 100ch;
+    animation: typing 1s steps(30), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+
+  }
+  .fa {
+    padding: 5px;
+
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+ }
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-linkedin {
+    background: white;
+    color: black;
+  }
+
+  .fa-github{
+    background: white;
+      color: black;
+  }
+
+.fa-twitter{
+  background: white;
+    color: black;
+}
+  .fa-envelope{
+    background: white;
+    color: black;
+  }
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.post{
+  margin: 35px 100px 0px 100px;
+  border: 1px solid white;
+  padding-bottom: 15px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.main{
+  padding-left: 1%;
+}
+.data{
+  padding-left: 20px;
+  font-size: large;
+}
+.data a{
+  color:rgb(255, 255, 255);
+}
+
+.data a:hover{
+  background-color: #ddd;
+    color: black;
+}
+.data a::before{
+  content: "-> ";
+}
+  .nav{
+    overflow: hidden;
+      margin: 0 auto;
+  }
+
+  .nav ul{
+    list-style-type: none; 
+    margin: 0;
+  padding: 0;
+}
+
+  .nav li {
+    float: left;
+    padding-left: 1%;
+    }
+
+  .nav a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+

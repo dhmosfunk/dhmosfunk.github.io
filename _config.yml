@@ -1,0 +1,64 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Dhmosfunk
+email: dhmosfnk@proton.me
+author_name: Dhmosfunk
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://dhmosfunk.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+linkedin_username: dhmosthenhs-tzama
+twitter_username: DSkfunk
+github_username:  dhmosfunk
+
+# custom variables
+aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in odio a mi ultrices ornare ut sed sem. Sed tristique nibh vitae augue tempor sagittis. Nunc diam magna, rhoncus ultricies quam ut, pellentesque aliquet lacus. Suspendisse eu tortor eu urna luctus fringilla ac eget mi. Fusce pulvinar, turpis in pharetra consectetur, neque ipsum consequat quam, ut lobortis enim risus sed magna. Mauris eget sem tellus. Aliquam laoreet nunc id ligula volutpat condimentum. Proin ultrices sed libero a eleifend. Sed ut gravida leo. Sed eu purus sapien. Mauris pretium sit amet ligula vitae rutrum. Nulla sit amet dui libero. Pellentesque mollis sit amet metus et sodales. Ut vestibulum libero ipsum, eu posuere turpis egestas at. Vivamus quis posuere tortor. Duis vitae erat orci. Sed tempus purus at vestibulum convallis. Ut commodo vestibulum dolor eu aliquam. Mauris tincidunt dui mauris, quis mattis magna feugiat vitae. Nam aliquam lacinia ipsum id consequat. Praesent sit amet hendrerit arcu. Morbi vitae pretium orci. Maecenas diam tellus, auctor vitae lorem vitae, commodo suscipit sapien. Quisque at tincidunt quam. Aliquam vitae quam facilisis, pellentesque ex nec, convallis eros. Ut ullamcorper iaculis massa, sed varius ipsum sagittis fermentum. Fusce tristique laoreet turpis, in aliquet massa sollicitudin ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut sed libero eu felis congue placerat. Donec pellentesque mauris at lorem gravida convallis. Donec malesuada nisi metus, ac tincidunt nunc faucibus sed. Integer ullamcorper lorem sed lectus ullamcorper elementum. Donec ultricies lectus volutpat urna vestibulum sodales. Nam viverra erat et mauris blandit, id ultrices sem laoreet. Donec scelerisque condimentum ante, eget molestie orci porta at. Sed fringilla sem eu lorem tristique convallis. Morbi felis enim, luctus et mi quis, lacinia tincidunt lectus. Sed aliquam mattis orci, eu interdum elit facilisis et. Nullam a varius sapien. Sed interdum felis neque, vel ornare nunc pretium nec. Donec sed justo in nisi venenatis pretium quis tincidunt turpis. Aliquam vestibulum sodales quam, sed lacinia nulla finibus sed. Etiam ultricies nulla ac volutpat vulputate."
+
+# Build settings
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  auto_ids:       true
+  toc_levels:     1..3
+
+
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
