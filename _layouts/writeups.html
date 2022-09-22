@@ -9,10 +9,11 @@ layout: default
     <p class="data">
         {% for post in site.posts %}
         <div id="post_data">
-            <a href="{{post.url}}"> <h3>{{post.title}}</h3>, {{post.date | date: "%B %d, %Y"}}</a>
+            <h3>{{post.title}}</h3>
 
             <br>
-            {{post.desc}}
+            {{post.desc}} <br>
+            {{post.date | date: "%B %d, %Y"}}
         </div>
         {% endfor %}
     </p>
