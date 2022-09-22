@@ -1,25 +1,8 @@
 ---
 layout: single
-title: Pandora [boot2root] - Hack The Box
-excerpt: " Description "
+title: Pandora - Hack The Box
 date: 2022-1-18
-classes: wide
-header:
-  teaser: /assets/images/htb-writeup-pandora/logo.png
-  teaser_home_page: true
-  icon: /assets/images/hackthebox.webp
-categories:
-  - hackthebox
-  - boot2root
-tags:  
-  - snmp enumeration
-  - CVE-2021-32099
-  - sql map
-  - ssh port forward
-  - file upload
-  - ssh keygen
-  - suid
-  - path hijacking
+category: "boot2root"
 ---
 
 <h1 align="center">
