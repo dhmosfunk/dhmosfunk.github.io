@@ -1,8 +1,7 @@
 ---
 layout: single
-repository: swisskyrepo/PayloadsAllTheThings
-topic: SQL Injection 
-pullreq: https://github.com/swisskyrepo/PayloadsAllTheThings/pull/537
-date: 2022-9-11
+title: Pandora - Hack The Box
+date: 2022-1-18
+category: "boot2root"
 desc: "Update the PostgreSQL Time Based Payloads for Database,Table,Columns Extract"
 ---
