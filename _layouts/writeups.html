@@ -8,15 +8,15 @@ layout: default
 <hr>
     <p class="data">
         {% for post in site.posts %}        
-        <div id="post_data" onclick="location.href='{{post.url}}'">
+        <div id="post_data" onclick="location.href='{{post.url}}'" style="cursor: pointer;">
             <h4>{{post.title}} | {{post.category}} </h4>
 
             {{post.desc}} <br><br>
             {{post.date | date: "%B %d, %Y"}}
         </div>
-        {% endfor %}
     </p>
-    <div class="preview">
-        No Preview
-    </div>
+        <div class="preview">
+         {% include_relative {{post.url}} %}
+        </div>
+        {% endfor %}
     <hr>
