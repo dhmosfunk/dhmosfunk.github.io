@@ -6,7 +6,6 @@ layout: default
 <h3 class="typing">GET /write-ups/ HTTP/2</H3>
 
 <hr>
-    <div class="split left">
             <p class="data">
                 {% for post in site.posts %}        
                 <div id="post_data" onclick="location.href='{{post.url}}'" style="cursor: pointer;">
@@ -17,13 +16,4 @@ layout: default
                 </div>
                 {% endfor %}
             </p>
-    </div>    
-
-    <div class="split right">
-
-            <div class="preview">
-                {{content}}
-            </div>
-
-    </div>
 <hr>
