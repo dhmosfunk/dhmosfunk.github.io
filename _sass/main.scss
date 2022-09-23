@@ -4,6 +4,19 @@ body {
     font-family: 'Inconsolata', Consolas, monospace;
     font-size: medium;
 }
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
+}
+
 .typing {
     width: 100ch;
     animation: typing 1s steps(30), blink .5s step-end infinite alternate;
