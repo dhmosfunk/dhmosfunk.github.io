@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+
+<h3 class="typing">GET /projects/ HTTP/2</H3>
+
+<hr>
+    <p class="data">
+        {% for contributions in site.contributions %}
+        <div id="post_data"><br>
+            <b>Repository:</b> {{contributions.repository}}<br>
+            <b>Topic:</b> {{contributions.topic}} <br>
+            <b>Pull Request:</b> <a href="{{contributions.pullreq}}" target="_blank">Link</a><br>
+            {{contributions.desc}} <br><br>
+            {{contributions.date | date: "%B %d, %Y"}}
+        </div>
+        {% endfor %}
+    </p>
+    <hr>
