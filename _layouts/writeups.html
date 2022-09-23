@@ -14,9 +14,10 @@ layout: default
             {{post.desc}} <br><br>
             {{post.date | date: "%B %d, %Y"}}
         </div>
+        {% endfor %}
     </p>
         <div class="preview">
-         {% include_relative {{post.url}} %}
+            {{content}}
         </div>
-        {% endfor %}
+        
     <hr>
