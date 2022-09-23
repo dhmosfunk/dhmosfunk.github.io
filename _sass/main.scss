@@ -125,6 +125,21 @@ hr.dashed {
   background-color: rgb(49, 49, 49);
 }
 
+#post_other{
+  border: 1px solid white;
+  margin-bottom: 15px;
+  padding: 0 10px 10px 10px;
+  width: 60%;
+}
+
+#post_other a{
+  color: white;
+}
+
+#post_other:hover{
+  background-color: rgb(49, 49, 49);
+}
+
 
 .active_post{
   background-color: rgb(49, 49, 49);
