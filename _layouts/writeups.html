@@ -7,8 +7,8 @@ layout: default
 
 <hr>
     <p class="data">
-        {% for post in site.posts %}
-        <div id="post_data">
+        {% for post in site.posts %}        
+        <div id="post_data" onclick="location.href='{{post.url}}'">
             <h4>{{post.title}} | {{post.category}} </h4>
 
             {{post.desc}} <br><br>
