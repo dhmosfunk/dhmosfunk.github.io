@@ -106,11 +106,15 @@ body {
     color: black;
   }
 
+hr{
+  border-top: 1px dashed white;
+}
+
 #post_data{
   border: 1px solid white;
   margin-bottom: 15px;
   padding: 0 10px 10px 10px;
-  width: 50%;
+  width: 60%;
 }
 
 #post_data a{
@@ -122,6 +126,10 @@ body {
 }
 
 
+.active_post{
+  background-color: rgb(49, 49, 49);
+}
+
 .flicker {
   position: fixed;
   top: 0;
@@ -132,7 +140,7 @@ body {
   opacity: 0;
   z-index: 1000;
   pointer-events: none;
-  animation: flicker 0.25s infinite;
+  animation: flicker 0.12s infinite;
 }
 @keyframes flicker {
 0% {
