@@ -10,8 +10,8 @@ layout: default
         {% for contributions in site.contributions %}
         <div id="post_data">
             <h4>Repository: {{contributions.repository}}</h4>
-            Topic: <b>{{contributions.topic}}</b> <br>
-            Pull Request: <a href="{{contributions.pullreq}}">Link</a><br>
+            <b>Topic:</b> {{contributions.topic}} <br>
+            <b>Pull Request:</b> <a href="{{contributions.pullreq}}" taget="_blank">Link</a><br>
             {{contributions.desc}} <br><br>
             {{contributions.date | date: "%B %d, %Y"}}
         </div>
