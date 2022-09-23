@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+
+<h3 class="typing">GET /Contributions/ HTTP/2</H3>
+
+<hr>
+    <p class="data">
+        {% for contr in site.contributions %}
+        <div id="post_data">
+            <h4>{{contr.title}} </h4>
+
+            {{contr.desc}} <br><br>
+            {{contr.date | date: "%B %d, %Y"}}
+        </div>
+        {% endfor %}
+    </p>
+    <hr>
