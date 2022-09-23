@@ -248,20 +248,4 @@ box-shadow: 0 2px 6px rgba(25,25,25,0.2),
     inset 0 -5px 10px rgba(25,25,25,0.1);
 }
 
-.left,.right {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  top: 0;
-  padding-top: 100px;
-}
-
-.left {
-  left: 0;
-  padding-left: 5%;
-}
-.right {
-  right: 0;
-  padding-right: 5%;
-}
 
