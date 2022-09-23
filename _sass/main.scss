@@ -131,7 +131,7 @@ body {
   opacity: 0;
   z-index: 1000;
   pointer-events: none;
-  animation: flicker 0.12s infinite;
+  animation: flicker 0.25s infinite;
 }
 @keyframes flicker {
 0% {
