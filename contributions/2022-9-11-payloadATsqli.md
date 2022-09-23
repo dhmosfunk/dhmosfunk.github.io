@@ -1,4 +1,5 @@
 ---
+layout: single
 repository: swisskyrepo/PayloadsAllTheThings
 topic: SQL Injection 
 pullreq: https://github.com/swisskyrepo/PayloadsAllTheThings/pull/537
