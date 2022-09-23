@@ -7,7 +7,6 @@ layout: default
 
 <hr>
     <div class="split left">
-        <div class="centered">
             <p class="data">
                 {% for post in site.posts %}        
                 <div id="post_data" onclick="location.href='{{post.url}}'" style="cursor: pointer;">
@@ -18,7 +17,6 @@ layout: default
                 </div>
                 {% endfor %}
             </p>
-        </div>
     </div>    
 
     <div class="split right">
