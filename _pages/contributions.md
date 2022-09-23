@@ -1,5 +1,5 @@
 ---
-title: "contributions"
+title: "Contributions"
 layout: contributions
 permalink: /contributions/
 ---
