@@ -7,12 +7,12 @@ layout: default
 
 <hr>
     <p class="data">
-        {% for contr in site.contributions %}
+        {% for contributions in site.contributions %}
         <div id="post_data">
-            <h4>{{contr.title}} </h4>
+            <h4>{{contributions.title}} </h4>
 
-            {{contr.desc}} <br><br>
-            {{contr.date | date: "%B %d, %Y"}}
+            {{contributions.desc}} <br><br>
+            {{contributions.date | date: "%B %d, %Y"}}
         </div>
         {% endfor %}
     </p>
