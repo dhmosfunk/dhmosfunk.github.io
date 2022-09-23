@@ -6,18 +6,26 @@ layout: default
 <h3 class="typing">GET /write-ups/ HTTP/2</H3>
 
 <hr>
-    <p class="data">
-        {% for post in site.posts %}        
-        <div id="post_data" onclick="location.href='{{post.url}}'" style="cursor: pointer;">
-            <h4>{{post.title}} | {{post.category}} </h4>
+    <div class="split left">
+        <div class="centered">
+            <p class="data">
+                {% for post in site.posts %}        
+                <div id="post_data" onclick="location.href='{{post.url}}'" style="cursor: pointer;">
+                    <h4>{{post.title}} | {{post.category}} </h4>
 
-            {{post.desc}} <br><br>
-            {{post.date | date: "%B %d, %Y"}}
+                    {{post.desc}} <br><br>
+                    {{post.date | date: "%B %d, %Y"}}
+                </div>
+                {% endfor %}
+            </p>
         </div>
-        {% endfor %}
-    </p>
-        <div class="preview">
-            {{content}}
+    </div>    
+
+    <div class="split right">
+        <div class="centered">
+            <div class="preview">
+                {{content}}
+            </div>
         </div>
-        
-    <hr>
+    </div>
+<hr>
