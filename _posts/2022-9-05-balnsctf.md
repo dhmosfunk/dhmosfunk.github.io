@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: writeups
 title: Health Check 1 & 2 - BalsnCTF
 date: 2022-9-05
 category: "Web"

@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: writeups
 title: nullcon HackIM 2022
 date: 2022-4-11
 desc: "nullcom HackIM writeups log4u,texnology,fil3serv3r"

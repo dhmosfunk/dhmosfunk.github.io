@@ -1,5 +1,5 @@
 ---
-layout: signle
+layout: writeups
 title: Secret - Hack The Box
 date: 2021-12-21
 desc: "Secret is a fun and tricky machine where we have to find the secret key at that file.zip we did download. When we find the secret key we must forge the malicious jwt token to gain access to the API with admin privileges and obtain remote code execution adding a special character at the end of URL with reverse shell payload. At the root part we found a SUID binary file with source code in C. At this point we run the binary file and we cause a segmentation fault and obtain the root flag at /var/crash."

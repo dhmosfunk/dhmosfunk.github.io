@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: writeups
 title: nanoScore - WMCTF2022
 date: 2022-8-25
 category: "Web"

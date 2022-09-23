@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: writeups
 title: Pandora - Hack The Box
 date: 2022-1-18
 category: "boot2root"
