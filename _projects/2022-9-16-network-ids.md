@@ -1,7 +1,6 @@
 ---
-repository: swisskyrepo/PayloadsAllTheThings
-topic: HTTP Request Smuggling
-pullreq: "https://github.com/swisskyrepo/PayloadsAllTheThings/pull/539"
+title: Network Intrusion Detection Model
+repo_link: "https://github.com/dhmosfunk/Network-Intrusion-Detection-Model"
 date: 2022-9-16
-desc: "Add my tool for manually HTTP Request Smuggling exploitation"
+desc: "This repository contains all necessary files for implementation of the Intrusion Detection System model. This project is for educational purposes only and is implemented for decision support system class."
 ---
