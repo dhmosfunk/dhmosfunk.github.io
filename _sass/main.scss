@@ -289,6 +289,7 @@ box-shadow: 0 2px 6px rgba(25,25,25,0.2),
   height: 100%;
   width: 50%;
   position: fixed;
+  overflow-x: hidden;
 }
 
 .left {
@@ -297,5 +298,5 @@ box-shadow: 0 2px 6px rgba(25,25,25,0.2),
 }
 .right {
   right: 0;
-  padding-right: 5%;
+  padding-right: 13%;
 }
