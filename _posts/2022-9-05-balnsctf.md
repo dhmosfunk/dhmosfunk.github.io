@@ -73,9 +73,10 @@ We can retrive the flag in the `__pycache__` directory.
 
 ## Health Check 2
 
+Lets move to the next level of the challenge.. Lets take a look into directory with the python files and more specifically at `apiserver.py` and `@app.get('/{dir_name}')`.
 ![examine](https://user-images.githubusercontent.com/45040001/188760193-9a4b878f-9659-4dd7-864d-e0646ab7f53a.png)
 
-
+We can figure out a `race contition` vulnerability which according to the author my solution it was unintended. The exploitation part follows below.
 ```python
 @app.get('/{dir_name}')
 async def get_status(dir_name: str):
