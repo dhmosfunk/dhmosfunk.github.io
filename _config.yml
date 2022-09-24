@@ -40,13 +40,15 @@ excerpt_separator: "\n\n"
 incremental: false
 
 
-# Markdown Processing
-markdown: kramdown
+# Conversion
+markdown:    kramdown
+highlighter: rouge
 
+# Markdown Processors
 kramdown:
   input: GFM
+  auto_ids: true
   syntax_highlighter: rouge
-
 
 include:
   - _pages
