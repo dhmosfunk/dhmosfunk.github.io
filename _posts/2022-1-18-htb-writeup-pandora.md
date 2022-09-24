@@ -3,6 +3,7 @@ layout: writeups
 title: Pandora - Hack The Box
 date: 2022-1-18
 category: "boot2root"
+desc: "Not ready"
 ---
 
 <h1 align="center">
