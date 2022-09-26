@@ -8,7 +8,7 @@ layout: default
 <div class="left">
             <p class="data">
                 {% for post in site.posts %}        
-                <div id="post_data" onclick="location.href='{{post.url}}'" style="cursor: pointer;">
+                <div id="post_data" onclick="location.href='{{post.url}}'; dodajAktywne(this)" style="cursor: pointer;">
                     <h4>{{post.title}} | {{post.category}} </h4>
 
                     {{post.desc}} <br><br>
@@ -20,3 +20,14 @@ layout: default
 <div class="right">
     {{content}}
     </div>
+
+
+<script>
+    function dodajAktywne(elem) {
+    var a = document.getElementsByTagName('div')
+    for (i = 0; i < a.length; i++) {
+        a[i].classList.remove('active_post')
+    }
+    elem.classList.add('active_post');
+}
+</script>
