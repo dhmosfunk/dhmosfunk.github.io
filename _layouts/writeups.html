@@ -8,7 +8,7 @@ layout: default
 <div class="left">
             <p class="data">
                 {% for post in site.posts %}        
-                <div id="post_data" onclick="location.href='{{post.url}}'; dodajAktywne(this)" style="cursor: pointer;">
+                <div id="post_data" onclick="location.href='{{post.url}}'; " style="cursor: pointer;">
                     <h4>{{post.title}} | {{post.category}} </h4>
 
                     {{post.desc}} <br><br>
@@ -22,3 +22,10 @@ layout: default
     </div>
 
 
+
+<script>
+    function addClass()
+    {
+        document.getElementById("post_data").className = "active_post";
+    }
+</script>
