@@ -1,6 +1,16 @@
 ---
 layout: default
 ---
+<script>
+    function dodajAktywne(elem) {
+    var a = document.getElementsById('post_data')
+    for (i = 0; i < a.length; i++) {
+        a[i].classList.remove('active_post')
+    }
+    elem.classList.add('active_post');
+}
+</script>
+
 
 <h3 class="typing">GET /write-ups/ HTTP/2</H3>
 
@@ -22,12 +32,3 @@ layout: default
     </div>
 
 
-<script>
-    function dodajAktywne(elem) {
-    var a = document.getElementsById('post_data')
-    for (i = 0; i < a.length; i++) {
-        a[i].classList.remove('active_post')
-    }
-    elem.classList.add('active_post');
-}
-</script>
