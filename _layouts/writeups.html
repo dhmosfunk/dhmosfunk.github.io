@@ -9,20 +9,22 @@ layout: default
             <p class="data">
                 {% for post in site.posts %} 
                 
-                {% if page.title != post.title%}
-                    <div id="post_data" class="active_post" onclick="location.href='{{post.url}}';" style="cursor: pointer;">
-                    <h4>{{post.title}} | {{post.category}} </h4>
+                    {% if page.title != post.title%}
+                        <div id="post_data" class="active_post" onclick="location.href='{{post.url}}';" style="cursor: pointer;">
+                        <h4>{{post.title}} | {{post.category}} </h4>
 
-                    {{post.desc}} <br><br>
-                    {{post.date | date: "%B %d, %Y"}}
-                {% endif %}
-                <div id="post_data" onclick="location.href='{{post.url}}';" style="cursor: pointer;">
-                <h4>{{post.title}} | {{post.category}} </h4>
+                        {{post.desc}} <br><br>
+                        {{post.date | date: "%B %d, %Y"}}
 
-                {{post.desc}} <br><br>
-                {{post.date | date: "%B %d, %Y"}}
-                    
-                </div>
+                        {% else %}
+                        <div id="post_data" onclick="location.href='{{post.url}}';" style="cursor: pointer;">
+                        <h4>{{post.title}} | {{post.category}} </h4>
+
+                        {{post.desc}} <br><br>
+                        {{post.date | date: "%B %d, %Y"}}
+                            
+                        </div>
+                    {% endif %}
                 {% endfor %}
             </p>
 </div>
