@@ -7,8 +7,11 @@ layout: default
 <hr  class="dashed">
 <div class="left">
             <p class="data">
-                {% for post in site.posts %}        
-                <div id="post_data" onclick="location.href='{{post.url}}';" style="cursor: pointer;">
+                {% for post in site.posts %} 
+                    {% if post.url == page.url %}        
+                        <div id="post_data" class="active" onclick="location.href='{{post.url}}';" style="cursor: pointer;">
+                    {% endif %}
+                    <div id="post_data" class="active" onclick="location.href='{{post.url}}';" style="cursor: pointer;"></div>
                     <h4>{{post.title}} | {{post.category}} </h4>
 
                     {{post.desc}} <br><br>
