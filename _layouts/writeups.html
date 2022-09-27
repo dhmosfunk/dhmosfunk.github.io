@@ -9,7 +9,7 @@ layout: default
             <p class="data">
                 {% for post in site.posts %} 
                 
-                    {% if page.title != post.title %}
+                    {% if site.url != post.url %}
                         <div id="post_data" class="active_post" onclick="location.href='{{post.url}}';" style="cursor: pointer;">
                         <h4>{{post.title}} | {{post.category}} </h4>
 
