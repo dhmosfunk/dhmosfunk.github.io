@@ -5,11 +5,20 @@
 layout: default
 ---
 
-<h3 class="typing">GET /aboutme.txt HTTP/2</H3>
-<hr>
-    <p class="data">{{site.aboutme}}</p>
-<hr>
+<h3 class="typing">GET /projects/ HTTP/2</H3>
 
+    <hr  class="dashed">
+    <p class="data">
+        {% for project in site.projects %}
+        <div id="post_other"><br>
+            <b>Title:</b> {{project.title}}<br>
+            <b>Repository Link:</b> <a href="{{project.repo_link}}" target="_blank">Link</a> <br>
+            {{project.desc}} <br><br>
+            {{project.date | date: "%B %d, %Y"}}
+        </div>
+        {% endfor %}
+    </p>
+    <hr  class="dashed">
 
 <a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="fa fa-linkedin"></a>
 <a href="mailto:{{site.email}}" target="_blank" class="fa fa-envelope"></a>
