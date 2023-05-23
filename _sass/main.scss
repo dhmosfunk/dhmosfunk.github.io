@@ -145,6 +145,9 @@ hr.dashed {
 
 #post_data:hover{
   background-color: rgb(49, 49, 49);
+   box-shadow: 8px 8px 0px 0px rgba(255,255,255,1);
+-webkit-box-shadow: 8px 8px 0px 0px rgba(255,255,255,1);
+-moz-box-shadow: 8px 8px 0px 0px rgba(255,255,255,1);
 }
 
 #post_other{
