@@ -5,6 +5,10 @@ body {
     font-size: medium;
 }
 
+.octicon-star path {
+  fill: #817d7d; /* Set the fill color to white */
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
