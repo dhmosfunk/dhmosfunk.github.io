@@ -8,7 +8,7 @@ layout: default
 <h3 class="typing">GET /projects/ HTTP/2</H3>
 
 
-    <p class="data">
+
         {% for project in site.projects %}
         <div id="post_other"><br>
             <b>Title:</b> {{project.title}}<br>
@@ -17,13 +17,3 @@ layout: default
             {{project.date | date: "%B %d, %Y"}}
         </div>
         {% endfor %}
-    </p>
-
-<a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="fa fa-linkedin"></a>
-<a href="mailto:{{site.email}}" target="_blank" class="fa fa-envelope"></a>
-<a href="https://twitter.com/{{site.twitter_username}}" target="_blank" class="fa fa-twitter"></a>
-<a href="http://github.com/{{site.github_username}}" target="_blank" class="fa fa-github"></a>
-
-<div class="footer">
-    <p>{{site.author_name}}<i class="fa fa-map-marker"> </i>127.1</p>
-</div>
