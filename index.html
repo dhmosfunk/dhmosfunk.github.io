@@ -5,7 +5,7 @@
 layout: default
 ---
 
-{% assign sorted_projects = site.projects | sort: 'date' %}
+{% assign sorted_projects = site.projects | sort: 'date' | reverse %}
 
 {% for project in sorted_projects %}
   <div id="post_other">
