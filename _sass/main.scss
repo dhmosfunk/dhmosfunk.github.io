@@ -5,6 +5,16 @@ body {
     font-size: medium;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container svg {
+  margin-right: 5px;
+}
+
+
 .octicon path {
   fill: #817d7d; /* Set the fill color to white */
 }
