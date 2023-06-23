@@ -1,7 +1,5 @@
 items:
   - title: Home
     url: /
-  - title: Write-ups
-    url: /writeups/
-  - title: Contributions
-    url: /contributions/
+  - title: Reasearch
+    url: /research/

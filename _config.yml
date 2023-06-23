@@ -29,7 +29,7 @@ twitter_username: DSkfunk
 github_username:  dhmosfunk
 
 # custom variables
-aboutme: "I have approximately 2-3 years of practical experience in the field of Cybersecurity and Informatics. My skills have been developed through participation in Capture the Flag (CTF) challenges on HackTheBox, independent research, and testing of my knowledge."
+aboutme: "#"
 
 # Conversion
 markdown:    kramdown
@@ -50,19 +50,6 @@ include:
   - _pages
 
 collections:
-  contributions:
-    output: true
-  projects:
+  research:
     output: true
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
