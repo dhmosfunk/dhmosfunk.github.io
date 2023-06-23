@@ -17,7 +17,7 @@ body{
 }
 
 .navbar-logo {
-  margin-right: auto;
+  margin-right: 20px;
 }
 
 .navbar-logo img {
@@ -32,7 +32,11 @@ body{
 }
 
 .navbar-menu li {
-  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+  margin-right: 0;
 }
 
 .navbar-menu li a {
