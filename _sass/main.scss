@@ -33,10 +33,18 @@ body{
 
 .navbar-menu li {
   margin-right: 20px;
+  position: relative;
 }
 
-.navbar-menu li:last-child {
-  margin-right: 0;
+.navbar-menu li::before {
+  content: "|";
+  position: absolute;
+  left: -10px;
+  color: #fff;
+}
+
+.navbar-menu li:first-child::before {
+  display: none;
 }
 
 .navbar-menu li a {
