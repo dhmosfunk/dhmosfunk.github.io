@@ -10,11 +10,11 @@ permalink: /research/
 <div class="inside-wrapper">
     {% for research in site.research %}
         <div class="post">
-            Tittle: <div class="rText">{{research.title}}</div> <br>
-            <img class="rImage" src="{{research.image}}">
-            Author: <div class="rText">{{research.author}}</div> <br>
-            Release Date: <div class="rText">{{research.date}}</div> <br>
-            <a hrer="{{research.link}}">READ</a> <br>
+            <div class="rText"><span class="rLabel">Title:</span> {{ research.title }}</div>
+            <img class="rImage" src="{{ research.image }}" alt="Research Image">
+            <div class="rText"><span class="rLabel">Author:</span> {{ research.author }}</div>
+            <div class="rText"><span class="rLabel">Release Date:</span> {{ research.date }}</div>
+            <a href="{{ research.link }}">READ</a>
         </div>
     {% endfor %}
 </div>
