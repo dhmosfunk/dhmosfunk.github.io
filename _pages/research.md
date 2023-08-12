@@ -12,9 +12,9 @@ permalink: /research/
         <div class="post">
             {{research.title}} <br>
             <img class="rImage" src="{{research.image}}">
-            {{research.link}} <br>
-            {{research.author}} <br>
-            {{research.date}}
+            Author: {{research.author}} <br>
+            Release Date: {{research.date}} <br>
+            <a hrer="{{research.link}}">READ</a> <br>
         </div>
     {% endfor %}
 </div>
