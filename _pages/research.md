@@ -9,6 +9,11 @@ permalink: /research/
 
 <div class="inside-wrapper">
     {% for research in site.research %}
-        {{research.title}}
+        <div class="post">
+            {{research.title}} <br>
+            {{research.link}} <br>
+            {{research.author}} <br>
+            {{research.date}}
+        </div>
     {% endfor %}
 </div>
