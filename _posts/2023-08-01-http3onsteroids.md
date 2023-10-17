@@ -124,6 +124,8 @@ for (i = 0; i < list[hdr_idx].n.len; ++i) {
 
 ## Lab Setup
 
+[Officail Repository](https://github.com/dhmosfunk/HTTP3ONSTEROIDS)
+
 The entire lab is running on Docker. You can run the lab with the following commands:
 
 1. `cd /lab`
