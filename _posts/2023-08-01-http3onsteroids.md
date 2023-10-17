@@ -9,10 +9,6 @@ comments: true
 toc: true
 ---
 
-![](https://github.com/dhmosfunk/HTTP3ONSTEROIDS/raw/main/assets/images/image.png)
-
-## Vulnerability Description
-
 HAProxy's HTTP/3 implementation fails to block a **malformed HTTP header field name**, and **when deployed in front of a server that incorrectly process this malformed header**, it may be used to conduct an HTTP request/response smuggling attack. A remote attacker may alter a legitimate user's request. As a result, the attacker may obtain sensitive information or cause a denial-of-service (DoS) condition.
 
 [https://jvn.jp/en/jp/JVN38170084/](https://jvn.jp/en/jp/JVN38170084/)
