@@ -7,8 +7,8 @@
 # 井号后面的文字是说明文档，不会被程序读取。
 
 # 描述/签名
-name: LOFFER
-description: 一个可以fork的博客
+name: @dhmosfunk
+description: Cybersecurity enthusiast; CTF Player; Developer; BSCP;
 
 # 输入你的网站域名（如果你没有添加自己的域名，而是直接用GitHub pages分配的域名的话可以省略）
 url:
@@ -30,13 +30,13 @@ favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/fav
 
 # 菜单中的按钮
 navigation:
-  - name: 首页
+  - name: Home
     url: /
-  - name: 关于
+  - name: About
     url: /about
-  - name: 归档
+  - name: Archive
     url: /archive
-  - name: 标签
+  - name: Tags
     url: /tags
 
 # 每页的文章数
