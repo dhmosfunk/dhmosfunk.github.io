@@ -8,7 +8,7 @@ comments: true
 toc: true
 ---
 
-### ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries
+Welcome to **ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries**. The idea for this analysis originated from my experience with a forensic challenge on the `Swiss Hacking Challenge (SHC)` CTF. This challenge encompassed investigation, reverse engineering, cryptography, web exploitation, and obtaining access to the Command and Control (C2) interface – essentially, it was a malware analysis challenge.
 
 ![](https://github.com/dhmosfunk/LatrodectusWEB/blob/main/assets/header.png)
 
