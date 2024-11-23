@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries
+title: "ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries"
 date: 2024-05-02
 Author: dhmosfunk
 tags: [malware, msi, dll, analysis, reverse, latrodectus]
