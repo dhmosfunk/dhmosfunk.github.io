@@ -50,7 +50,7 @@ On HTTP/2 protocol:
 
 HTTP/2 Downgrading. This is a interesting behavior between frontend and next reverse proxies. When backend server only supports HTTP/1.1 but the frontend clients are using HTTP/2, the frontend will rewrite the request to HTTP/1.1 and send it to the next reverse proxy or backend server. Similar behavior is observed on HAProxy HTTP/3 implementation, where the frontend server will downgrade the request to HTTP/1.1.
 
-![http3downgrade](images/downgrade.png)
+![http3downgrade](https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/images/downgrade.png)
 
 ## Lab Setup & Architecture
 
@@ -60,7 +60,7 @@ The lab enviroment can be found in the [lab](https://github.com/dhmosfunk/HTTP3O
 
 The backend application is capturing all received requests and stores them in a file called requests.log. This file is used to verify if the request smuggling was successful and if the backend application received the request.
 
-![labstructure](images/lab_structure.png)
+![labstructure](https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/images/lab_structure.png)
 
 HAProxy configuration is set to block access to the `/admin` route.
 
@@ -249,11 +249,11 @@ The table above summarizes the behavior of different reverse proxies when receiv
 
 Here’s a request with a malformed header name that Squid accepted and processed successfully:
 
-![squid_200_name](images/squid_200_name.png)
+![squid_200_name](https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/images/squid_200_name.png)
 
 In contrast, the following request results in a 400 Bad Request response from Varnish due to the malformed header:
 
-![varnish](images/varnish_400.png)
+![varnish](https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/images/varnish_400.png)
 
 During tests various encodings were used to encode the HTTP version in uppercase, such as `"\u0048\u0054\u0054\u0050"` and `"\x48\x54\x54\x50"`, but HAProxy still automatically converts the header names to lowercase.
 
@@ -275,11 +275,11 @@ This request is interpreted as a valid request by NGINX, Apache, and Varnish, an
 
 This is a significant difference in behavior compared to the previous request with a malformed header name. The payload stored in the header value is accepted and processed by the reverse proxies, allowing the smuggled request to be executed.
 
-![nginx_200](images/nginx_200.png)
+![nginx_200](https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/images/nginx_200.png)
 
 As we can see in the screenshot, NGINX returns a 200 status code and the requests.log file in the backend application shows that the request was successfully smuggled and the backend application received the request to the `/admin` route.
 
-![nginx_backend](images/nginx_backend.png)
+![nginx_backend](https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/images/nginx_backend.png)
 
 Now? There are some other payloads that can be used to identify successful request smuggling causing delays on the smuggled request.
 
@@ -297,7 +297,7 @@ The below payload causes a delay on the smuggled request with content-length.
 
 Example screenshot:
 
-![delay](images/delay.png) 
+![delay](https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/images/delay.png) 
 
 ## Bypassing ACL restriction
 
@@ -315,7 +315,7 @@ Still. No response from the smuggled request. After some testing, I found that s
 
 Below is the request that successfully bypasses the ACL restriction in HAProxy and retrieves the response from the smuggled request:
 
-![acl_bypass](images/acl_bypass.png)
+![acl_bypass](https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/images/acl_bypass.png)
 
 Finally, the `/admin` endpoint was reached, and the corresponding response was captured.
 
