@@ -60,7 +60,7 @@ The lab enviroment can be found in the [lab](https://github.com/dhmosfunk/HTTP3O
 
 The backend application is capturing all received requests and stores them in a file called requests.log. This file is used to verify if the request smuggling was successful and if the backend application received the request.
 
-![labstructure](https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/images/lab_structure.png)
+![labstructure](https://raw.githubusercontent.com/dhmosfunk/dhmosfunk.github.io/refs/heads/master/images/lab_structure.png)
 
 HAProxy configuration is set to block access to the `/admin` route.
 
