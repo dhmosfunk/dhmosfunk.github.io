@@ -1,6 +1,6 @@
 ---
 layout: post
-title: H3.X HTTP/3 ON STEROIDS/reborned
+title: H3.X HTTP/3 ON STEROIDS/reborned.
 date: 2025-08-07
 Author: dhmosfunk
 tags: [poc, research, exploit, http3, request-smuggling, haproxy]
