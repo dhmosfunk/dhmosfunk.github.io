@@ -8,7 +8,7 @@ comments: true
 toc: true
 ---
 
-HTTP request smuggling is a well known web vulnerability that occurs when an attacker is able to send a request that is interpreted differently by two or more web servers/reverse proxies. On this blog post, will be presented how we can archive HTTP Request Smuggling due to wrong RFC HTTP/3 implementation in HAProxy and how different web proxies handles the malformed requests. Finally This is a continuation of the previous research on [CVE-2023-25950 - HTTP3ONSTEROIDS](https://github.com/dhmosfunk/HTTP3ONSTEROIDS) and CVE-2024-53008.
+HTTP request smuggling is a well known web vulnerability that occurs when an attacker is able to send a request that is interpreted differently by two or more web servers/reverse proxies. On this blog post, will be presented how we can archive HTTP Request Smuggling due to wrong RFC HTTP/3 implementation in HAProxy and how different web proxies handles the malformed requests. This is a continuation of the previous research on [CVE-2023-25950 - HTTP3ONSTEROIDS](https://github.com/dhmosfunk/HTTP3ONSTEROIDS) and CVE-2024-53008.
 
 ## Executive Summary
 
